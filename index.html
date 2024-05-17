@@ -49,7 +49,7 @@
             color: white;
         }
         nav ul li a:hover{
-            color: rgb(118, 118, 222);
+            color: green;
             font-size: 1.04rem;
         }
 
@@ -70,7 +70,7 @@
         }
 
         .leftSection {
-            font-size: 3rem;
+            font-size: 2rem;
             margin: 70px 0;
         }
 
@@ -107,12 +107,123 @@
             font-size: 1.04rem;
             color: rgb(94, 226, 226);
         }
+        .skills{
+        background: var(--bg-color);
+    }
+    #skillscontainer{
+        background: rgba(6, 18, 55, 0.288);
+        color:var(--text-color ) ;
+        display: flex;
+        border-radius: 1rem;
+        padding: 2rem;
+        width:78%;
+        margin: 100px;
+        margin-top: 5rem;
+        margin-bottom: 12rem;
+        margin-left: 9em;
+    }
+    #skillscontainer .row {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        flex-wrap: wrap;
+        gap: 1.8rem;
+    }
+ #skillscontainer .bar{
+        margin-bottom:15px ;
+        padding: 10px ;
+        border-radius:1rem ;
+        background: var(--bg-color) ;
+        box-shadow:0 4px 10px var(--main-color) ;
+        transition: 0.3s ease ;
+        cursor: pointer;
+    }
+    #skillscontainer .bar:hover{
+
+        box-shadow:0 4px 10px pink ;
+        transform: scale(1.03);
+    }
+    #skillscontainer .bar .info{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:rgb(130, 101, 158);
+        gap: 3rem;
+        margin-top: 1rem;
+        justify-content: centr;
+
+    }
+    #skillscontainer .bar .info:hover{
+        color:blueviolet;
+        transform: scale(0.98);
+    }
+    #skillscontainer .bar .info span{
+        font-size: 2rem ;
+        font-weight: 500;
+        margin-left:0.5rem ;
+    }
+
+    .service{
+        background: var(--second-bg-color);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items:center;
+        gap: 2.3rem;
+        
+    }
+    .service-box{
+        background-color: rgb(243, 24, 24) ;
+        height: 300px;
+        width: 400px;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: 0.3s ease ;
+    }
+    .service-box:hover{
+        background: rgb(12, 11, 11);
+        color: var(--text-color);
+        transform: scale(1.03);
+        border: 1px solid var(--main-color);
+
+    }
+    .service-box .service-info{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     max-height: 100px;
+     justify-content:center;
+     align-items:center;
+     padding: 5rem;;
+    }
+    .service-info h4{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+    }
+    .service-info p{
+        font-size:1.6rem ;
+        font-weight: 400;
+        max-height: 100px;
+        max-width: fit-content;
+        margin: auto;
+
+    }
         footer{
-            background-color: rgb(208, 208, 255);
+            background-color: rgb(220, 220, 248);
+            height: 10rem;
+            margin-top: 10px;
         }
         footer div{
             display: flex;
-            padding:10x 10px;
+            padding:10px 10px;
             justify-content:space-evenly;
         }
         .footer ul{
@@ -121,7 +232,7 @@
         footer .footer-rights{
             text-align: center;
             color: grey;
-            padding: 12px 0;
+            padding: 10px 0;
         }
         .image-insta{
             width: 70px;
@@ -143,27 +254,35 @@
         }
         .footer li a{
             text-decoration: none;
-            color: rgb(196, 80, 80);
+            color: rgb(240, 53, 11);
         }
+        .footer li a:hover{
+            transform: scale(1.1); 
+            box-shadow: 0 0 30px rgba(224, 80, 80, 0.5);
+        }
+        .footer h3{
+            color: rgb(22, 21, 21);
+        }
+       
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar" id="navBar">
             <div class="left">Harendra Portfolio</div>
             <div class="right"></div>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="#navBar">Home</a></li>
                 <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Past projects</a></li>
-                <li><a href="/">Contact me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Past projects</a></li>
+                <li><a href="https://contact-harendra.netlify.app/">Contact me</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="home">
             <div class="leftSection">
                 Hi, i'm
                 <span class="pink">Harendra...</span>
@@ -171,29 +290,75 @@
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="p.jpg" alt="">
+                <img onclick="instagram()" src="p.jpg" alt="">
             </div>
         </section>
-        <section class="secondSection">
-            <span class="pink"><h1>PROJECTS</h1></span>
-            <div>
-                <div class="secondleft">
-                    <li><a href="/">Project 1</a></li>
-                    <li><a href="/">Project 2</a></li>
-                    <li><a href="/">Project 3</a></li>
+        <div class="section skills" id="skills">
+            <h2 class="heading">Skills</h2>
+            <div class="class">
+                <div class="row" id="skillscontainer">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/js.png"/>
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/html.png"/>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/css2.png"/>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/c++.png"/>
+                            <span>C++</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="secondright"></div>
+            </div>
+        </div>
+        <section class="service" id="projects">
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Project 1</h4>
+                <p>will display the information when uploaded
+                </p>
+            </div>
+
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <h4>Project 2</h4>
+                <p>will display the information when uploaded
+                </p>
+            </div>
+
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <h4>project 3</h4>
+                <p>will display the information when uploaded
+                </p>
             </div>
         </section>
+        </div>
+    </div>
     </main>
     <footer class="footer">
         <div class="flex">
             <div class="footer-first">
-                <h3>Thanks for visiting</h3>
+                <h3>contact me</h3>
             </div>
             <div class="footer-second">
                 <ul>
-                    <img class="image-github" src="github.png" alt="">
+                    <a href="https://github.com/eviiileyeee"><img class="image-github" src="github.png" alt=""></a>
                     <li><a href="https://github.com/eviiileyeee">github</a> </li>
 
                 </ul>
@@ -221,6 +386,9 @@
           strings: ['Making Websites','Backend','Frontend','JavaScript'],
           typeSpeed: 50,
         });
+        const instagram =()=>{
+            location.href="https://www.instagram.com/eviiileyeee";
+        }
       </script>
 </body>
 
