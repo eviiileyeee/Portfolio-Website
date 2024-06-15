@@ -89,9 +89,6 @@ nav ul li a:hover{
     font-size: 1.04rem;
     color: rgb(94, 226, 226);
 }
-#skill_title{
-    background-color: rgb(19, 16, 68);
-}
 .skills{
 background: var(--bg-color);
 }
