@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio-haren</title>
+    <link rel="Website icon" type="jpg" href="p.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -38,7 +39,7 @@
             <div class="leftSection">
                 Hi, i'm
                 <span class="pink">Harendra...</span>
-                <div>  a computer science student<br> Who love</div>
+                <div> a computer science student<br> Who love</div>
                 <span id="element"></span>
             </div>
             <div class="rightSection">
@@ -46,30 +47,30 @@
             </div>
         </section>
         <div class="section skills " id="Expertise">
-            <h2 class="heading">Skills</h2>
+            <h2 class="heading" id="skill_title">SKILLS</h2>
             <div class="class">
                 <div class="row" id="skillscontainer">
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/js.png"/>
+                            <img src="assets/js.png" />
                             <span>Javascript</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/html.png"/>
+                            <img src="assets/html.png" />
                             <span>HTML</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/css2.png"/>
+                            <img src="assets/css2.png" />
                             <span>CSS</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/c++.png"/>
+                            <img src="assets/c++.png" />
                             <span>C++</span>
                         </div>
                     </div>
@@ -77,31 +78,32 @@
             </div>
         </div>
         <section class="service" id="projects">
-        <div class="service-box">
-            <div class="service-info">
-                <h4>Project 1</h4>
-                <p>will display the information when uploaded
-                </p>
-            </div>
+            <div class="service-box">
+                <div class="service-info" onclick="referTO()">
+                    <h4>Med harmony</h4>
+                    <p>
+                        an Website which tells us about medical interaction between two medicins
+                    </p>
+                </div>
 
-        </div>
-        <div class="service-box">
-            <div class="service-info">
-                <h4>Project 2</h4>
-                <p>will display the information when uploaded
-                </p>
             </div>
+            <div class="service-box">
+                <div class="service-info" >
+                    <h4>Project 2</h4>
+                    <p>will display the information when uploaded
+                    </p>
+                </div>
 
-        </div>
-        <div class="service-box">
-            <div class="service-info">
-                <h4>project 3</h4>
-                <p>will display the information when uploaded
-                </p>
             </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>project 3</h4>
+                    <p>will display the information when uploaded
+                    </p>
+                </div>
         </section>
         </div>
-    </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="flex">
@@ -124,24 +126,27 @@
             <div class="footer-fourth">
                 <ul>
                     <img class="image-linkedin" src="linkedin.png" alt="">
-                   <li> <a href="">linkdin</a> </li>
+                    <li> <a href="">linkdin</a> </li>
                 </ul>
             </div>
         </div>
         <div class="footer-rights">
-         Copyright  &#169 harensportfolio.com | All right reserved
+            Copyright &#169 harensportfolio.com | All right reserved
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Making Websites','Backend','Frontend','JavaScript'],
-          typeSpeed: 50,
+            strings: ['Making Websites', 'Backend', 'Frontend', 'JavaScript'],
+            typeSpeed: 50,
         });
-        const instagram =()=>{
-            location.href="https://www.instagram.com/eviiileyeee";
+        const instagram = () => {
+            location.href = "https://www.instagram.com/eviiileyeee";
         }
-      </script>
+        function referTO() {
+            window.location.href = 'https://moonlit-dieffenbachia-77aee1.netlify.app/';
+        }
+    </script>
 </body>
 
 </html>
