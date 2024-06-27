@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #eee0eb, #330867);
+    background-color: white;
     color: black;
     font-family: 'Poppins', sans-serif;
 }
@@ -21,6 +21,8 @@ nav {
     /* Gradient overlay and image */
     background-blend-mode: overlay;
     /* Blend mode for transparency */
+    box-shadow:1px 1px 20px rgba(0, 0, 0, 0.095);
+    border-radius: 1rem;
 }
 
 nav ul {
@@ -38,7 +40,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav ul li a:hover {
@@ -47,18 +49,20 @@ nav ul li a:hover {
 }
 
 
-.mobile-navbar-btn{
+.mobile-navbar-btn {
     display: none;
     background: transparent;
     cursor: pointer;
 }
-.mobile-nav-icon{
+
+.mobile-nav-icon {
     height: 2rem;
     width: 2rem;
     color: #efecef;
 }
+
 .mobile-nav-icon[name="close-outline"] {
-display: none;
+    display: none;
 }
 
 
@@ -70,7 +74,7 @@ display: none;
 }
 
 .firstSection {
-   
+
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
@@ -85,7 +89,7 @@ display: none;
 .leftSection {
     font-size: 2rem;
     font-weight: 500;
-    margin: 70px 0;
+    margin: 70px 0px;
 }
 
 .rightSection img {
@@ -93,6 +97,7 @@ display: none;
     margin-left: 50px;
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
+
 }
 
 .rightSection img:hover {
@@ -107,27 +112,31 @@ display: none;
     color: rgb(143, 94, 188);
 
 }
-.social-media-icons{
+
+.social-media-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 20vh;
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.225) 0%, rgba(0, 0, 0, 0) 100%), url('https://source.unsplash.com/random');
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.17) 0%, rgba(0, 0, 0, 0) 100%), url('https://source.unsplash.com/random');
     background-blend-mode: overlay;
-  }
-   .social_icons {
-     position: relative;
-     display: flex;
-     transform-style: preserve-3d;
-  }
-  .social_icons li {
+}
+
+.social_icons {
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+.social_icons li {
     position: relative;
     list-style: none;
     width: 40px;
     height: 40px;
     margin: 0px 5px;
-  }
-  .social_icons li:before{
+}
+
+.social_icons li:before {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -137,19 +146,21 @@ display: none;
 
     transform-origin: top;
     transform: skewX(-41deg);
-  }
-  .social_icons li:after{
+}
+
+.social_icons li:after {
     content: '';
     position: absolute;
-    top:5px;
+    top: 5px;
     left: -9px;
     width: 9px;
     height: 100%;
     transform-origin: right;
     transform: skewY(-49deg);
-  }
-  .social_icons li span{
-    background: rgba(0, 0, 0, 0.037);
+}
+
+.social_icons li span {
+    background: rgba(0, 0, 0, 0.182);
 
     position: absolute;
     top: 0;
@@ -163,44 +174,55 @@ display: none;
     color: #fff;
     font-size: 30px !important;
     transition: 1.5s ease-out;
-  }
-  .social_icons li:hover span {
+}
+
+.social_icons li:hover span {
     z-index: 1000;
     transition: .3s;
     color: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
-  }
-  .social_icons li:hover span:nth-child(5){
+}
+
+.social_icons li:hover span:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
-  }
-  .social_icons li:hover span:nth-child(4){
-  transform: translate(30px, -30px);
+}
+
+.social_icons li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
     opacity: .8;
-  }
-  .social_icons li:hover span:nth-child(3){
+}
+
+.social_icons li:hover span:nth-child(3) {
     transform: translate(20px, -20px);
     opacity: .6;
-  }
-  .social_icons li:hover span:nth-child(2){
+}
+
+.social_icons li:hover span:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: .4;
-  }ul li:hover span:nth-child(1){
+}
+
+ul li:hover span:nth-child(1) {
     transform: translate(0px, 0px);
     opacity: .2;
-  }
-  .social_icons li:nth-child(1):hover span{
+}
+
+.social_icons li:nth-child(1):hover span {
     background: #52E19F !important;
-  }
-  .social_icons li:nth-child(2):hover span{
+}
+
+.social_icons li:nth-child(2):hover span {
     background: #2C3456 !important;
-  }
-  .social_icons li:nth-child(3):hover span{
+}
+
+.social_icons li:nth-child(3):hover span {
     background: #EA6E96 !important;
-  }
-  .social_icons li:nth-child(4):hover span{
+}
+
+.social_icons li:nth-child(4):hover span {
     background: #FCEB00 !important;
-  }
+}
 
 .secondSection {
     max-width: 80vm;
@@ -221,19 +243,18 @@ display: none;
 }
 
 #skill_title {
-    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-weight: 500;
-
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 .skills {
     background: var(--bg-color);
-    background: linear-gradient(to right, #eee0eb, #330867);
-    background-color: rgb(232, 241, 241);
+    background-color: white;
     border-radius: 3vh;
-
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.267);
 }
 
 #skillscontainer {
@@ -301,10 +322,8 @@ display: none;
 
 
 .service-box {
-    background-image: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 100%), url('https://source.unsplash.com/random');
-    /* Gradient overlay and image */
-    background-blend-mode: overlay;
-    /* Blend mode for transparency */
+    background-color: whitesmoke;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.429),inset -20px -20px 60px rgba(255, 255, 255, 0.253);
     height: 300px;
     width: 350px;
     margin-bottom: 20px;
@@ -328,12 +347,12 @@ display: none;
     max-height: 100px;
     justify-content: center;
     align-items: center;
-    padding: 5vw;}
-
-.service-box .service-info:hover {
-    color: #eee0eb;
+    padding: 5vw;
 }
 
+.service-box:hover>.service-info {
+    color: white
+}
 
 .service-info h4 {
     font-size: 2.5rem;
@@ -354,7 +373,7 @@ display: none;
 
 
 footer {
-    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0) 100%), url('https://source.unsplash.com/random');
+    background-image: linear-gradient(120deg, rgba(29, 27, 27, 0.15) 0%, rgba(0, 0, 0, 0) 100%), url('https://source.unsplash.com/random');
     /* Gradient overlay and image */
     background-blend-mode: overlay;
     /* Blend mode for transparency */
@@ -407,24 +426,25 @@ footer .footer-rights {
 }
 
 /* strange*/
-@media(max-width:62em){
+@media(max-width:62em) {
 
-    html{
+    html {
         overflow-x: hidden;
     }
-    
-    nav{
+
+    nav {
         width: 100%;
         top: 0;
         height: 50px;
     }
-    .mobile-navbar-btn{
-      display: block;
-      z-index: 999;
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
 
     }
 
-    .mobile-nav-icon{
+    .mobile-nav-icon {
         color: black;
     }
 
@@ -433,13 +453,13 @@ footer .footer-rights {
         color: rgb(10, 10, 10);
     }
 
-    .right{
+    .right {
         width: 100%;
         height: 100vh;
         background-color: #d6dcdc;
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
 
 
         display: flex;
@@ -454,22 +474,22 @@ footer .footer-rights {
         pointer-events: none;
     }
 
-    nav ul{
+    nav ul {
         flex-direction: column;
     }
 
-    .active .right{
+    .active .right {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
     }
 
-    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
         display: block;
     }
 
-    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
         display: none;
     }
 
@@ -479,7 +499,7 @@ footer .footer-rights {
         color: green;
     }
 
-    .firstSection{
+    .firstSection {
         margin: 30px 0;
     }
 
