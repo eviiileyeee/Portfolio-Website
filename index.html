@@ -22,111 +22,199 @@
 
 <body>
     <header>
-        <nav class="navbar" id="navBar">
+       
+        <nav class="navbar " id="navBar">
             <div class="left">Harendra Portfolio</div>
-            <div class="right"></div>
-            <ul>
-                <li><a href="#navBar">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Past projects</a></li>
-                <li><a href="https://contact-harendra.netlify.app/">Contact me</a></li>
-            </ul>
+            <div class="right">
+                <ul>
+                    <li><a href="#navBar">Home</a></li>
+                    <li onclick="errInfo()"><a href="/">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="https://contact-harendra.netlify.app/">Contact </a></li>
+                </ul>
+            </div>
+            <div class="mobile-navbar-btn">
+                <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+                <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+            </div>
         </nav>
     </header>
     <main>
         <section class="firstSection" id="home">
+
             <div class="leftSection">
+                <div>
                 Hi, i'm
                 <span class="pink">Harendra...</span>
                 <div> a computer science student<br> Who love</div>
                 <span id="element"></span>
+                </div>
+                <div class="social-media-icon">
+                    <div>
+                        <ul class="social_icons">
+                            <li>
+                                <a href="https://www.facebook.com/jeatu.raja.9?mibextid=ZbWKwL">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="fa fa-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.x.com/hpsbundela">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="fa fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/eviiileyeee">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="fa fa-instagram"></span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/harendra-pratap-singh-bundela?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
             <div class="rightSection">
-                <img onclick="instagram()" src="p.jpg" alt="">
+                <img onclick="instagram()" src="assets/p.jpg" alt="">
             </div>
         </section>
-        <div class="section skills " id="Expertise">
-            <h2 class="heading" id="skill_title">SKILLS</h2>
+        
+        <div class="section skills " id="skills">
+            <section class="heading" id="skill_title">I love coding and exploring new technology. mostly into backend of
+                web development..Im a beginner who's messing with</section>
             <div class="class">
                 <div class="row" id="skillscontainer">
                     <div class="bar">
                         <div class="info">
                             <img src="assets/js.png" />
-                            <span>Javascript</span>
+                            <span>Java<br>script</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/html.png" />
+                            <img src="assets/html1.png" />
                             <span>HTML</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/css2.png" />
+                            <img src="assets/css.png" />
                             <span>CSS</span>
                         </div>
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <img src="assets/c++.png" />
+                            <img src="assets/cpp.png" />
                             <span>C++</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/nodejs.png" />
+                            <span>Node js</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/express.png" />
+                            <span>express</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/c.png" />
+                            <span>c</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/github1.png" />
+                            <span>Github</span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <img src="assets/git.png" />
+                            <span>git</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="service" id="projects">
-            <div class="service-box">
-                <div class="service-info" onclick="referTO()">
-                    <h4>Med harmony</h4>
-                    <p>
-                        an Website which tells us about medical interaction between two medicins
-                    </p>
-                </div>
-
-            </div>
-            <div class="service-box">
-                <div class="service-info" >
-                    <h4>Project 2</h4>
-                    <p>will display the information when uploaded
-                    </p>
-                </div>
-
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>project 3</h4>
-                    <p>will display the information when uploaded
-                    </p>
-                </div>
-        </section>
-        </div>
-        </div>
+        
+        <section class="heading" id="skill_title"> These are some projects which are made by me and my team. (click to
+            open)</section>
     </main>
+    <section class="service" id="projects">
+        <div class="service-box">
+            <div class="service-info" onclick="referTO()">
+                <h4>Med harmony</h4>
+                <p>
+                    A Website which tells us about medical interaction between two medicins
+                </p>
+            </div>
+
+        </div>
+        <div class="service-box">
+            <div class="service-info" onclick="refTO()">
+                <h4>Calculator</h4>
+                <p>a simple calculator using html css and js
+                </p>
+            </div>
+
+        </div>
+        <div class="service-box">
+            <div class="service-info" onclick="errInfo()">
+                <h4>Logic Gates</h4>
+                <p> A learning website which demonstrate working of logic gates. (not uploaded yet)
+                </p>
+            </div>
+    </section>
+
     <footer class="footer">
         <div class="flex">
             <div class="footer-first">
-                <h3>contact me</h3>
+                <h3>Contact Me</h3>
             </div>
             <div class="footer-second">
                 <ul>
-                    <a href="https://github.com/eviiileyeee"><img class="image-github" src="github.png" alt=""></a>
-                    <li><a href="https://github.com/eviiileyeee">github</a> </li>
+                    <a href="https://github.com/eviiileyeee"><img class="image-github" src="assets/github.png"
+                            alt=""></a>
+                    <li><a href="https://github.com/eviiileyeee">Github</a> </li>
 
                 </ul>
             </div>
             <div class="footer-third">
                 <ul>
-                    <img class="image-insta" src="insta.png" alt="">
-                    <li><a href="https://www.instagram.com/eviiileyeee">instagram</a></li>
+                    <img class="image-insta" src="assets/insta.png" alt="">
+                    <li><a href="https://www.instagram.com/eviiileyeee">Instagram</a></li>
                 </ul>
             </div>
             <div class="footer-fourth">
                 <ul>
-                    <img class="image-linkedin" src="linkedin.png" alt="">
-                    <li> <a href="">linkdin</a> </li>
+                    <img class="image-linkedin" src="assets/linkedin.png" alt="">
+                    <li> <a href="https://www.linkedin.com/in/harendra-pratap-singh-bundela?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkdin</a> </li>
                 </ul>
             </div>
         </div>
@@ -135,16 +223,24 @@
         </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Making Websites', 'Backend', 'Frontend', 'JavaScript'],
+
+            strings: ['Making Websites', 'Backend', 'Frontend', 'JavaScript', 'Development'],
             typeSpeed: 50,
+
         });
         const instagram = () => {
             location.href = "https://www.instagram.com/eviiileyeee";
         }
         function referTO() {
             window.location.href = 'https://moonlit-dieffenbachia-77aee1.netlify.app/';
+        }
+        function refTO() {
+            window.location.href = 'https://haren-calc.netlify.app/';
         }
     </script>
 </body>
